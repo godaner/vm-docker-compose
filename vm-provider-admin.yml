@@ -1,4 +1,4 @@
-version '2'
+version: "2"
 services:
   vm-provider-admin:
     image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-admin

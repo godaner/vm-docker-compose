@@ -1,4 +1,4 @@
-version '2'
+version: "2"
 services:
   vm-eureka:
     image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-eureka
