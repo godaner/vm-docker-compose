@@ -5,6 +5,7 @@ services:
     ports:
       - "5000:5000"
     network_mode: "host"
+    cpu_shares: 15000
     environment:
       - spring.profiles.active=prod00
   
