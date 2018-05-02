@@ -1,0 +1,11 @@
+version '2'
+services:
+  vm-eureka:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-eureka
+    ports:
+      - "1110:1110"
+    network_mode: "host"
+    cpu_quota: 15000
+    environment:
+      - spring.profiles.active=prod00
+
