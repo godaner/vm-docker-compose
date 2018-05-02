@@ -1,9 +1,9 @@
 version '2'
 services:
-  vm-provider-ws:
-    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-ws
+  vm-provider-admin:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-admin
     ports:
-      - "8880:8880"
+      - "2220:2220"
     network_mode: "host"
     cpu_quota: 15000
     environment:

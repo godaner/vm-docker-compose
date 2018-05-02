@@ -1,0 +1,22 @@
+version '2'
+services:
+
+  vm-provider-ws:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-ws
+    ports:
+      - "8880:88880"
+    network_mode: "host"
+    cpu_quota: 15000
+    environment:
+      - spring.profiles.active=prod00
+  vm-provider-admin:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-admin
+    ports:
+      - "2220:2220"
+    network_mode: "host"
+    cpu_quota: 15000
+    environment:
+      - spring.profiles.active=prod00
+
+
+
