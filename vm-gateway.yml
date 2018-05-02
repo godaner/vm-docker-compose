@@ -1,0 +1,10 @@
+version: "2"
+services:
+  vm-gateway:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-gateway
+    ports:
+      - "5000:5000"
+    network_mode: "host"
+    environment:
+      - spring.profiles.active=prod00
+  

@@ -1,0 +1,11 @@
+version: "2"
+services:
+  
+  vm-provider-admin:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-admin
+    ports:
+      - "2220:2220"
+    network_mode: "host"
+    environment:
+      - spring.profiles.active=prod00
+   

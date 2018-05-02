@@ -1,0 +1,43 @@
+version: "2"
+services:
+  vm-gateway:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-gateway
+    ports:
+      - "5000:5000"
+    network_mode: "host"
+    cpu_shares: 15000
+    environment:
+      - spring.profiles.active=prod00
+  vm-provider-admin:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-admin
+    ports:
+      - "2220:2220"
+    network_mode: "host"
+    cpu_shares: 15000
+    environment:
+      - spring.profiles.active=prod00
+
+  vm-provider-movie:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-movie
+    ports:
+      - "3330:3330"
+    network_mode: "host"
+    cpu_shares: 15000
+    environment:
+      - spring.profiles.active=prod00 
+  vm-provider-user:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-user
+    ports:
+      - "7770:7770"
+    network_mode: "host"
+    cpu_shares: 15000
+    environment:
+      - spring.profiles.active=prod00
+  vm-provider-src:
+    image: registry.cn-shenzhen.aliyuncs.com/godaner/vm-provider-src
+    ports:
+      - "4440:4440"
+    network_mode: "host"
+    cpu_shares: 15000
+    environment:
+      - spring.profiles.active=prod00
