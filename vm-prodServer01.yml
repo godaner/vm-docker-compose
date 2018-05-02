@@ -5,7 +5,6 @@ services:
     ports:
       - "5000:5000"
     network_mode: "host"
-    cpu_shares: 15000
     environment:
       - spring.profiles.active=prod00
   vm-provider-admin:
@@ -13,7 +12,6 @@ services:
     ports:
       - "2220:2220"
     network_mode: "host"
-    cpu_shares: 15000
     environment:
       - spring.profiles.active=prod00
 
@@ -22,7 +20,6 @@ services:
     ports:
       - "3330:3330"
     network_mode: "host"
-    cpu_shares: 15000
     environment:
       - spring.profiles.active=prod00 
   vm-provider-user:
@@ -30,7 +27,6 @@ services:
     ports:
       - "7770:7770"
     network_mode: "host"
-    cpu_shares: 15000
     environment:
       - spring.profiles.active=prod00
   vm-provider-src:
@@ -38,6 +34,5 @@ services:
     ports:
       - "4440:4440"
     network_mode: "host"
-    cpu_shares: 15000
     environment:
       - spring.profiles.active=prod00
