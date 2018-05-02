@@ -5,6 +5,5 @@ vm-provider-ws:
   net: "host"
   environment:
       - spring.profiles.active=prod00
-  restart: always
 
 
