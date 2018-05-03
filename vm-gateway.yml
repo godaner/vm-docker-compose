@@ -8,4 +8,5 @@ services:
     cpu_shares: 15000
     environment:
       - spring.profiles.active=prod00
-  
+    volumes:
+      - /usr/local:/usr/local

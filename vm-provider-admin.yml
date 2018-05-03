@@ -8,4 +8,6 @@ services:
     network_mode: "host"
     environment:
       - spring.profiles.active=prod00
+    volumes:
+      - /usr/local:/usr/local
    
